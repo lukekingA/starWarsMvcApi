@@ -14,12 +14,14 @@ export default class StarShips {
   }
 
   get DetailTemplate() {
-    return ` 
+    return `
+    <ul> 
     <li>Ship Name: ${this.name}</li>
     <li>Cargo Capacity: ${this.cargo_capacity}</li>
     <li>Crew Capicity: ${this.crew}</li>
     <li>Hyper-drive Rating: ${this.hyperdrive_rating}</li>
     <li>Build cost: ${this.cost} credits</li>
-    <li>Starship class: ${this.starship_class}</li>`
+    <li>Starship class: ${this.starship_class}</li>
+    </ul>`
   }
 }

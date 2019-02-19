@@ -15,8 +15,12 @@ function drawPeople() {
   })
   document.getElementById('people').innerHTML = template
   document.getElementById('buttons').innerHTML = `
-  <button onclick="window.app.controllers.swController.getPeople('${_swService.Previous}')" ${_swService.Previous ? '' : 'disabled'}>Previous</button>
-  <button onclick="window.app.controllers.swController.getPeople('${_swService.Next}')" ${_swService.Next ? '' : 'disabled'}>Next</button>
+  <div class="d-flex justify-content-between"><div>
+  <button class="btn btn-light text-dark"  onclick="window.app.controllers.swController.getPeople('${_swService.Previous}')" ${_swService.Previous ? '' : 'disabled'}>Previous</button>
+  <button class="btn btn-light text-dark" onclick="window.app.controllers.swController.getPeople('${_swService.Next}')" ${_swService.Next ? '' : 'disabled'}>Next</button>
+   </div>
+  <h4 class="text-light">People</h4>
+  </div>
   `
   console.log(_swService.Next)
 }

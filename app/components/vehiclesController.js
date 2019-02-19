@@ -10,8 +10,12 @@ function drawVehicles() {
   })
   document.getElementById('people').innerHTML = template
   document.getElementById('buttons').innerHTML = `
-  <button onclick="window.app.controllers.ssController.getShips('${_vhService.Previous}')" ${_vhService.Previous ? '' : 'disabled'}>Previous</button>
-  <button onclick="window.app.controllers.ssController.getShips('${_vhService.Next}')" ${_vhService.Next ? '' : 'disabled'}>Next</button>
+  <div class="d-flex justify-content-between"><div>
+  <button class="btn btn-light text-dark" onclick="window.app.controllers.vhController.getVehicles('${_vhService.Previous}')" ${_vhService.Previous ? '' : 'disabled'}>Previous</button>
+  <button class="btn btn-light text-dark" onclick="window.app.controllers.vhController.getVehicles('${_vhService.Next}')" ${_vhService.Next ? '' : 'disabled'}>Next</button>
+  </div>
+  <h4 class="text-light">Vehicles</h4>
+  </div>
   `
 }
 

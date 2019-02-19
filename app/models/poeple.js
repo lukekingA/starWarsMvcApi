@@ -14,7 +14,7 @@ export default class Person {
 
   get DetailTemplate() {
     return `
-  <ul>
+    <ul>
   <li>${this.name}</li>
   <li>Is: ${this.gender} gender</li>
   <li>Has: ${this.hair_color} hair</li>

@@ -14,7 +14,8 @@ export default class Vehicles {
   }
 
   get DetailTemplate() {
-    return `<ul>
+    return `
+    <ul>
   <li>${this.name}</li>
   <li>Model: ${this.model}</li>
   <li>Cost: ${this.cost} credits</li>
